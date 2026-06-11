@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import Button from './Button'
+import Button from './Button.tsx'
 
 export default function Dice() {
   const [number, setNumber] = useState(1)
