@@ -3,15 +3,14 @@ export default function Button({onClick}) {
     <button 
       onClick={onClick}
       style={{
-        padding:'12px 24px', 
+        padding:'14px 28px', 
         fontSize:'18px',
         background:'white',
         color:'black',
         border:'none',
-        borderRadius:'10px',
+        borderRadius:'12px',
         cursor:'pointer',
-        fontWeight:'bold',
-        marginTop:'20px'
+        fontWeight:'bold'
       }}
     >
       Roll Dice
