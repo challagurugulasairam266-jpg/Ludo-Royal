@@ -11,15 +11,17 @@ export default function Dice() {
   }
 
   return (
-    <div style={{textAlign:'center', marginTop:'50px', color:'white'}}>
-      {/* Dice dabba - idhi click cheste roll avthundi */}
+    <div style={{textAlign:'center', marginTop:'50px', color:'white', background:'black', minHeight:'100vh', paddingTop:'80px'}}>
+      <h1 style={{fontSize:'28px', marginBottom:'40px'}}>Ludo Royal</h1>
+      
+      {/* Single dice dabba */}
       <div 
         onClick={rollDice}
         style={{
           width:'120px', 
           height:'120px', 
           background:'white', 
-          margin:'30px auto', 
+          margin:'0 auto 30px auto', 
           fontSize:'70px',
           fontWeight:'bold',
           color:'black',
@@ -34,7 +36,7 @@ export default function Dice() {
         {number}
       </div>
       
-      {/* Button - idhi click cheste roll avthundi. Okkate undi */}
+      {/* Single button - okkate undi */}
       <Button onClick={rollDice} />
     </div>
   )
