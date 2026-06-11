@@ -1,14 +1,6 @@
-export default function Button() {
+export default function Button({onClick}) {
   return (
-    <button style={{
-      padding:'15px 30px', 
-      fontSize:'18px', 
-      borderRadius:'10px', 
-      border:'none', 
-      background:'#4f46e5', 
-      color:'white',
-      cursor:'pointer'
-    }}>
+    <button onClick={onClick} style={{padding:'12px 24px', fontSize:'18px', background:'white', color:'black', border:'none', borderRadius:'10px', cursor:'pointer', fontWeight:'bold'}}>
       Roll Dice
     </button>
   )
