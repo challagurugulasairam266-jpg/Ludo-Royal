@@ -32,9 +32,7 @@ export default function Dice() {
       >
         {number}
       </div>
-      <div onClick={rollDice}>
-        <Button />
-      </div>
+      <Button onClick={rollDice} />
     </div>
   )
 }
