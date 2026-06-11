@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
-import Button from './button'
+import Button from './Button'
 
 export default function Dice() {
-  const [number, setNumber] =  useState(1)
+  const [number, setNumber] = useState(1)
   
   function rollDice() {
     const random = Math.floor(Math.random() * 6) + 1
@@ -12,6 +12,7 @@ export default function Dice() {
 
   return (
     <div style={{textAlign:'center', marginTop:'50px', color:'white'}}>
+      {/* Dice dabba - idhi click cheste roll avthundi */}
       <div 
         onClick={rollDice}
         style={{
@@ -32,6 +33,8 @@ export default function Dice() {
       >
         {number}
       </div>
+      
+      {/* Button - idhi click cheste roll avthundi. Okkate undi */}
       <Button onClick={rollDice} />
     </div>
   )
